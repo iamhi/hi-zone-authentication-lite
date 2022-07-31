@@ -27,6 +27,34 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "no-trailing-spaces": [2, { "skipBlankLines": true }],
+        "no-unused-vars": [2, { "args": "after-used", "argsIgnorePattern": "^_" }],
+    "semi": [2, "always"],
+    "no-trailing-spaces": [2, { "skipBlankLines": true }],
+    "prefer-template": 0,
+    "import/prefer-default-export": 0,
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0,
+    "object-curly-spacing": ["error", "always"],
+    "no-extra-parens": "error",
+    "max-len": ["error", { "code": 155 }],
+    "no-multi-spaces": "error",
+    "implicit-arrow-linebreak": ["warn"],
+    "comma-dangle": ["error", "always-multiline"],
+    "object-curly-newline": ["error", {
+      "multiline": true,
+      "minProperties": 4,
+      "consistent": true
+    }],
+    "array-bracket-newline": ["error", {
+      "multiline": true,
+      "minItems": 4
+    }],
+    "array-element-newline": ["error", {
+      "multiline": true,
+      "minItems": 4
+    }]
     }
 }

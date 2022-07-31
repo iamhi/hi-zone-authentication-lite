@@ -15,7 +15,12 @@ app.use(compression());
 app.use(
 	cors({
 		// origin: ['http://localhost:3000'],
-		methods: ['GET', 'POST', 'PUT', 'DELETE'],
+		methods: [
+			'GET',
+			'POST',
+			'PUT',
+			'DELETE',
+		],
 		allowedHeaders: ['Content-Type', 'Authorization'],
 	}),
 );
@@ -29,6 +34,4 @@ app.get('/healthcheck', (req, res) => {
 	res.status(HttpStatus.OK).json({ message: 'Im good' });
 });
 
-app.listen(process.env.PORT, () =>
-	console.log(`Server started on port ${process.env.PORT}`)
-);
+app.listen(process.env.PORT, () => console.log(`Server started on port ${process.env.PORT}`));
